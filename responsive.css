@@ -1,0 +1,109 @@
+@media (max-width: 991px){
+    header, header.sticky{
+        padding: 10px 20px;
+    }
+    header .navigation{
+        display: none;
+    }
+    header .navigation.active{
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+    .menu-toggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(/images/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menu-toggle.active{
+        background: url(/images/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    header.sticky .menu-toggle{
+        filter: invert(1);
+    }
+
+    header .navigation li a{
+        color: #111;
+        font-size: 1.6em;
+      }
+   
+    section{
+        padding: 20px;
+    }
+
+    .banner .content h2{
+        font-size: 3em;
+        color: #fff;
+    }
+    
+    .row{
+        flex-direction: column;
+    }
+
+    .row .col50{
+        position: relative;
+        width: 100%;
+    }
+
+    .row .col50 .image-container{
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .menu .content{
+        margin-top: 20px;
+    }
+
+    .menu .content .box{
+        margin: 10px;
+    }
+
+    .menu .content .box .image-container{
+        height: 260px;
+    }
+
+    .tittle{
+        text-align: center;
+    }
+    
+    .text-tittle{
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+
+    .testimonials .content .box{
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .contactForm{
+        padding: 35px 40px;
+        max-width: 500px;
+        margin-bottom: 30px;
+    }
+    
+}
+
+@media (max-width: 991px){
+    .banner .content h2 {
+        font-size: 2.2em;
+        color: #fff;
+    }
+}    
